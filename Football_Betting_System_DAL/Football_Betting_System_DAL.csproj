@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Context\Configurations\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Generic_Repository\Interfaces\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Unit_of_Work_Repository\Interfaces\" />
+  </ItemGroup>
+
 </Project>
