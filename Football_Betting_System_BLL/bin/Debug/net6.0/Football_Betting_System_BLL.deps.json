@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Football_Betting_System_BLL/1.0.0": {
+        "runtime": {
+          "Football_Betting_System_BLL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Football_Betting_System_BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

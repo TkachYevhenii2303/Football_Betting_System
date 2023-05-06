@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Data_transfer_Objects\Request_Result_DTO\" />
+    <Folder Include="Data_transfer_Objects\Response_Result_DTO\" />
+  </ItemGroup>
+
 </Project>
