@@ -14,16 +14,16 @@ namespace Football_Betting_System_DAL.Context.Configurations
         public void Configure(EntityTypeBuilder<Colors> builder)
         {
             builder
-                .HasMany<Teams>(collection => collection.Home_teams)
+                .HasMany(collection => collection.Home_teams)
                 .WithOne(entity => entity.Home_colors)
                 .HasForeignKey(result => result.Home_colors_ID)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.ClientSetNull);
 
             builder
-                .HasMany<Teams>(collection => collection.Away_teams)
+                .HasMany(collection => collection.Away_teams)
                 .WithOne(entity => entity.Away_colors)
                 .HasForeignKey(result => result.Away_colors_ID)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.ClientSetNull);
         }
     }
 }

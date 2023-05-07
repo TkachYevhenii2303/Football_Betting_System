@@ -10,4 +10,8 @@
     <Folder Include="Repository_Services\Interfaces\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Football_Betting_System_DAL\Football_Betting_System_DAL.csproj" />
+  </ItemGroup>
+
 </Project>

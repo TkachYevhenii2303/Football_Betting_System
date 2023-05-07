@@ -14,9 +14,15 @@ namespace Football_Betting_System_DAL.Context.Configurations
         public void Configure(EntityTypeBuilder<Games> builder)
         {
             builder
-                .HasMany<Bets>(collection => collection.Bets)
+                .HasMany(collection => collection.Bets)
                 .WithOne(entity => entity.Games)
                 .HasForeignKey(result => result.Games_ID);
+
+            builder
+                .HasMany(collection => collection.PlayersStatistics)
+                .WithOne(entity => entity.Games)
+                .HasForeignKey(resutlt => resutlt.Games_ID)
+                .OnDelete(DeleteBehavior.ClientSetNull);
         }
     }
 }

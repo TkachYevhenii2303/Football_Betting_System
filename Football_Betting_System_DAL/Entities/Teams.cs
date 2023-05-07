@@ -20,13 +20,13 @@ namespace Football_Betting_System_DAL.Entities
 
         public Guid Towns_ID { get; set; }
 
-        public virtual Colors Home_colors { get; set; } = null!;
+        public virtual Colors? Home_colors { get; set; } = null!;
 
-        public Guid Home_colors_ID { get; set; }
+        public Guid? Home_colors_ID { get; set; }
 
-        public virtual Colors Away_colors { get; set; } = null!;
+        public virtual Colors? Away_colors { get; set; } = null!;
 
-        public Guid Away_colors_ID { get; set; }
+        public Guid? Away_colors_ID { get; set; }
 
         public virtual ICollection<Games> Home_games { get; set; } = null!; 
 

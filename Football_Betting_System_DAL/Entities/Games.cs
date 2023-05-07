@@ -18,11 +18,11 @@ namespace Football_Betting_System_DAL.Entities
 
         public Teams Home_teams { get; set; } = null!;
 
-        public Guid Home_teams_ID { get; set; }
+        public Guid? Home_teams_ID { get; set; }
 
         public Teams Away_teams { get; set; } = null!;
 
-        public Guid Away_teams_ID { get; set; }
+        public Guid? Away_teams_ID { get; set; }
 
         public ICollection<PlayersStatistics> PlayersStatistics { get; set; } = null!;
 

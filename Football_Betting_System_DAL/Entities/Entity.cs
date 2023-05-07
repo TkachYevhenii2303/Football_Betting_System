@@ -8,11 +8,11 @@ namespace Football_Betting_System_DAL.Entities
 {
     public abstract class Entity
     {
-        protected internal Guid ID { get; set; }
-        
-        protected internal DateTime Created_at { get; set; }
+        public Guid ID { get; set; }
 
-        protected internal DateTime? Updated_at { get; set; }
+        public DateTime Created_at { get; set; }
+
+        public DateTime? Updated_at { get; set; }
         
         protected Entity()
         {

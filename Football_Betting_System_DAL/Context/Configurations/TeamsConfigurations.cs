@@ -14,12 +14,12 @@ namespace Football_Betting_System_DAL.Context.Configurations
         public void Configure(EntityTypeBuilder<Teams> builder)
         {
             builder
-                .HasMany<Games>(collection => collection.Home_games)
+                .HasMany(collection => collection.Home_games)
                 .WithOne(entity => entity.Home_teams)
                 .HasForeignKey(result => result.Home_teams_ID);
 
             builder
-                .HasMany<Games>(collection => collection.Away_games)
+                .HasMany(collection => collection.Away_games)
                 .WithOne(entity => entity.Away_teams)
                 .HasForeignKey(result => result.Away_teams_ID);
         }

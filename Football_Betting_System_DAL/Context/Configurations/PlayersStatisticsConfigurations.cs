@@ -14,16 +14,6 @@ namespace Football_Betting_System_DAL.Context.Configurations
         public void Configure(EntityTypeBuilder<PlayersStatistics> builder)
         {
             builder.HasKey(nameof(PlayersStatistics.Playes_ID), nameof(PlayersStatistics.Games_ID));
-
-            builder
-                .HasOne<Players>(entity => entity.Players)
-                .WithMany(collection => collection.PlayersStatistics)
-                .HasForeignKey(result => result.Playes_ID);
-
-            builder
-                .HasOne<Games>(entity => entity.Games)
-                .WithMany(collection => collection.PlayersStatistics)
-                .HasForeignKey(result => result.Playes_ID);
         }
     }
 }

@@ -20,10 +20,10 @@ namespace Football_Betting_System_DAL.Entities
 
         public Players Players { get; set; } = null!;
 
-        public Guid Playes_ID { get; set; }
+        public Guid? Playes_ID { get; set; }
 
         public Games Games { get; set; } = null!;   
 
-        public Guid Games_ID { get; set; }
+        public Guid? Games_ID { get; set; }
     }
 }
